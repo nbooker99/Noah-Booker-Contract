@@ -112,27 +112,29 @@ dayone <- as.Date(params$weekonemonday)
 startweek <- params$startweek
 
 
-  
+
 #}
 
 
 topic = c(
-  "What is Data Science and Meet the Toolkit",
-  "Data and Visualization",
-  "Grammar of data wrangling",
-  "Data types and Data Transformations",
-  "Tips for effective data visualization",
-  "Scientific studies and confounding",
-  #  "Spring Break",#  "",
-  "Web scraping",
-  "Functions",
-  "Data and Ethics",
-  "Fitting and interpreting models",
-  "Prediction and overfitting",
-  "Cross validation",
-  "Quantifying uncertainty",
-  "Interactive web apps",
-  "Special Topics"
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "(Spring Break)",
+  "",
+  "",
+  "",
+  "(Thesis maybe due Friday)",
+  "",
+  "",
+  "",
+  "",
+  ""
 )
 
 ```
@@ -151,7 +153,7 @@ I, `r params$name`, agree to :
   	-  I have checked that forked files, repos, or projects appear on my Github account and are accessible;
   	-  I feel like I have spent an adequate amount of time and energy on assignments; 
   	-  My presentation is professional, engaging, and accessible.
-2) Produce at least `r params$portfolios` “Satisfactory” portfolio pieces on the schedule specified below.
+2) Produce at least `r params$portfolios` “Satisfactory” portfolio pieces ("projects" below) on the schedule specified below.
 3) Complete a “Satisfactory” presentation based on some portfolio pieces. 10 minutes total in length.
 
 
@@ -163,36 +165,33 @@ I, `r params$name`, agree to :
 - [ ] `r advdate(dayone, 1, topic)`
 - [ ] `r advdate(dayone, 2, topic)`
 - [ ]  `r advdate(dayone, 3, topic)`
-  - Finish Lab 1 and 2 by `r startweek`:  `r advdate(dayone, 3, assignment=startweek)`
+  - Lab 1 by `r startweek`:  `r advdate(dayone, 3, assignment=startweek)`
   - Propose your contract to Mason by `r startweek`:  `r advdate(dayone, 3, assignment=startweek)`
 - [ ] `r advdate(dayone, 4, topic)`
-  - Finish portfolio piece 1 by `r startweek`:  `r advdate(dayone, 4, assignment=startweek)`
+  - Lab 2 by `r startweek`:  `r advdate(dayone, 4, assignment=startweek)`
 - [ ] `r advdate(dayone, 5, topic)`
 - [ ] `r advdate(dayone, 6, topic)`
 - [ ] `r advdate(dayone, 7, topic)`
     - Schedule a check-in with Mason by `r startweek`:  `r advdate(dayone, 7, assignment=startweek)`
 - [ ] `r advdate(dayone, 8, topic)`
+  - Project 1 by `r startweek`:  `r advdate(dayone, 8, assignment=startweek)`
 - [ ] `r advdate(dayone, 9, topic)`
 - [ ] `r advdate(dayone, 10, topic)`
-  - Finish Lab 3 and 4  by `r startweek`:  `r advdate(dayone, 5, assignment=startweek)`
-  - Finish portfolio piece 2 by `r startweek`:  `r advdate(dayone, 6, assignment=startweek)`
+  - Labs 3 and 4  by `r startweek`:  `r advdate(dayone, 10, assignment=startweek)`
+  - Project 2 by `r startweek`:  `r advdate(dayone, 10, assignment=startweek)`
 - [ ] `r advdate(dayone, 11, topic)`
-  - Finish Lab 5 and 6 by `r startweek`:  `r advdate(dayone, 7, assignment=startweek)`
-  - Finish portfolio piece 3 by `r startweek`:  `r advdate(dayone, 8, assignment=startweek)`
+  - Labs 5 and 6 by `r startweek`:  `r advdate(dayone, 11, assignment=startweek)`
+  - Project 3 by `r startweek`:  `r advdate(dayone, 11, assignment=startweek)`
 - [ ] `r advdate(dayone, 12, topic)`
-  - Finish Lab 7 and 8 by `r startweek`:  `r advdate(dayone, 9, assignment=startweek)`
-  - Finish portfolio piece 4 by `r startweek`:  `r advdate(dayone, 10, assignment=startweek)`
+  - Labs 7 and 8 by `r startweek`:  `r advdate(dayone, 12, assignment=startweek)`
+  - Project 4 by `r startweek`:  `r advdate(dayone, 12, assignment=startweek)`
 - [ ] `r advdate(dayone, 13, topic)`
-  - Finish Lab 9 and 10 by `r startweek`:  `r startweek`:  `r advdate(dayone, 11, assignment=startweek)`
-  - Finish portfolio piece 5 by `r startweek`:  `r advdate(dayone, 12, assignment=startweek)`
-  `r if(params$labs>=13) paste0(" - Finish Lab 13 by ",startweek,": ",advdate(dayone, 13, assignment=startweek))`
-    `r if(params$labs>=12) paste0(" - Finish Lab 12 by ",startweek,": ",advdate(dayone, 12, assignment=startweek))`
-    `r if(params$labs>=11) paste0(" - Finish Lab 11 by ",startweek,": ",advdate(dayone, 13, assignment=startweek))`
-    - Finish portfolio piece 6 by `r advdate(dayone, 13, assignment=startweek)`
+  - Lab 9 by `r startweek`:  `r startweek`:  `r advdate(dayone, 13,           assignment=startweek)`
+  - Projects 5 and 6 by `r startweek`:  `r advdate(dayone, 13, assignment=startweek)`
 - [ ] `r advdate(dayone, 14, topic)`
-  - Finish portfolio pieces 7 and 8 by `r startweek`:  `r advdate(dayone, 14, assignment=startweek)`
+  - Lab 10 by `r startweek`:  `r startweek`:  `r advdate(dayone, 14,           assignment=startweek)`
+  - Projects 7 and 8 by `r startweek`:  `r advdate(dayone, 14, assignment=startweek)`
 - [ ] `r advdate(dayone, 15, topic)`
-  - Finish portfolio piece 9 and 10 by `r startweek`:  `r advdate(dayone, 15, assignment=startweek)`
-- [ ] Portfolio completion and end-of-semester presentation
-  - Due on `r startweek`: `r advdate(dayone, 15, assignment=startweek)`
+  - Lab 11 by `r startweek`:  `r startweek`:  `r advdate(dayone, 15,           assignment=startweek)`
+  - Projects 9 and 10 by `r startweek`:  `r advdate(dayone, 15, assignment=startweek)`
 
